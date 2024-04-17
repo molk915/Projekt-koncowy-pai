@@ -10,31 +10,6 @@ function App() {
   const [quality, setQuality] = useState("1");
   const [itemData, setItemData] = useState(null);
   const [imageUrl, setImageUrl] = useState("");
-  
-  const getItems = async () => {
-    const apiUrl = `http://localhost:5000/${itemname}/${tier}/${enchants}/${quality}/${location}`;
-    try {
-      const response = await axios.get(apiUrl);
-      if (response.data && response.data.length > 0) {
-        const itemInfo =
-          response.data[0].length > 0 ? response.data[0][0] : null;
-        if (itemInfo) {
-          setItemData({
-            sellPriceMax: itemInfo.sell_price_max,
-            sellPriceMin: itemInfo.sell_price_min,
-            buyPriceMax: itemInfo.buy_price_max,
-            buyPriceMin: itemInfo.buy_price_min,
-          });
-        }
-        if (response.data[1]) {
-          setImageUrl(response.data[1]);
-        }
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-
-  
 
   const getItems = async () => {
     const apiUrl = `http://localhost:5000/${itemname}/${tier}/${enchants}/${quality}/${location}`;
@@ -66,12 +41,12 @@ function App() {
       <input
         type="text"
         value={itemname}
-        onChange={(e) => setItemName(e.target.value)}
+        onChange={(item) => setItemName(item.target.value)}
         className="input-field"
       />
       <select
         value={tier}
-        onChange={(e) => setTier(e.target.value)}
+        onChange={(Tier) => setTier(Tier.target.value)}
         className="select-box"
       >
         <option value="4">Tier 4</option>
@@ -82,7 +57,7 @@ function App() {
       </select>
       <select
         value={enchants}
-        onChange={(e) => setEnchants(e.target.value)}
+        onChange={(enchant) => setEnchants(enchant.target.value)}
         className="select-box"
       >
         <option value="0">Enchants 0</option>
@@ -93,7 +68,7 @@ function App() {
       </select>
       <select
         value={location}
-        onChange={(e) => setLocation(e.target.value)}
+        onChange={(Location) => setLocation(Location.target.value)}
         className="select-box"
       >
         <option value="Caerleon">Caerleon</option>
@@ -105,7 +80,7 @@ function App() {
       </select>
       <select
         value={quality}
-        onChange={(e) => setQuality(e.target.value)}
+        onChange={(Quality) => setQuality(Quality.target.value)}
         className="select-box"
       >
         <option value="0">quality 1</option>
@@ -116,7 +91,7 @@ function App() {
       </select>
 
       <button onClick={getItems} className="button">
-        Get Items
+        Check Items
       </button>
 
       {itemData && (
