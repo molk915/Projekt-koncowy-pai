@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ItemForm from "./ItemForm";
-import ItemDetails from "./ItemDetails";
+import ItemForm from "./components/ItemForm/ItemForm";
+import ItemDetails from "./components/ItemDetails/ItemDetails";
+import ItemImage from "./components/ItemImage/ItemImage";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Item Prices</h1>
+      <Navbar />
       <ItemForm onSubmit={getItems} />
       <ItemDetails itemData={itemData} />
       <ItemImage imageUrl={imageUrl} />

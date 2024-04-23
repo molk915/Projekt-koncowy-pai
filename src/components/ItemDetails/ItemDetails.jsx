@@ -1,4 +1,5 @@
 import React from "react";
+import "./ItemDetails.css";
 
 function ItemDetails({ itemData }) {
   if (!itemData) return null;

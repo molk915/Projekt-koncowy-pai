@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ItemForm.css";
 
 function ItemForm({ onSubmit }) {
   const [itemname, setItemName] = useState("Bag");
@@ -14,7 +15,7 @@ function ItemForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Item Prices</h1>
+      <h2>Item Prices</h2>
       <input
         type="text"
         value={itemname}
