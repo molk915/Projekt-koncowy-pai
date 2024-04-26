@@ -8,7 +8,7 @@ CORS(app)
 
 def find_unique_name(name, tier, language, enchant):
     # Load data from the JSON file
-
+ 
     item_tier = {"1": "Begginer's", "2": "Novie's", "3": "Journeymsn's", "4": "Adept's", "5": "Expert's", "6": "Master's", "7": "Grandmaster's", "8": "Elder's"}
 
     full_name = f"{item_tier[tier]} {name}"
