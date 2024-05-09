@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ItemDetails.css";
 
 function ItemDetails({ itemData }) {
@@ -13,5 +14,14 @@ function ItemDetails({ itemData }) {
     </div>
   );
 }
+
+ItemDetails.propTypes = {
+  itemData: PropTypes.shape({
+    sellPriceMax: PropTypes.number,
+    sellPriceMin: PropTypes.number,
+    buyPriceMax: PropTypes.number,
+    buyPriceMin: PropTypes.number,
+  }).isRequired,
+};
 
 export default ItemDetails;

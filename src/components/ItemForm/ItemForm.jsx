@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./ItemForm.css";
 
 function ItemForm({ onSubmit }) {
@@ -74,5 +75,9 @@ function ItemForm({ onSubmit }) {
     </form>
   );
 }
+
+ItemForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default ItemForm;

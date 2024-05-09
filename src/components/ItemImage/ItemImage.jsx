@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ItemImage.css";
 
 function ItemImage({ imageUrl }) {
@@ -12,5 +13,9 @@ function ItemImage({ imageUrl }) {
     />
   );
 }
+
+ItemImage.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+};
 
 export default ItemImage;
