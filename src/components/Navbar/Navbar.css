@@ -1,17 +1,32 @@
 .navbar {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 40px;
+  height: 60px; /* Zwiększyłem wysokość paska nawigacyjnego */
   width: 100%;
-  border: 1px black solid;
+  background-color: #f9f9f9; /* Dodałem tło */
 }
 
-a {
+.navbar a {
   text-decoration: none;
-  color: black;
-  border-left: 1px black solid;
-  border-right: 1px black solid;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
+  color: #350988; /* Zmieniłem kolor tekstu */
+  padding: 15px 20px; /* Zwiększyłem wewnętrzne odstępy */
+  transition: color 0.3s ease; /* Dodane płynne przejście koloru */
+}
+
+.navbar a:hover {
+  color: #5a0101;
+  transition: color 0.3s ease; /* Dodane płynne przejście koloru */
+}
+
+.navbar a:first-child {
+  border-left: none; /* Usunąłem lewą krawędź dla pierwszego linku */
+}
+
+.navbar a:last-child {
+  border-right: none; /* Usunąłem prawą krawędź dla ostatniego linku */
 }
