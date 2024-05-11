@@ -15,7 +15,6 @@
 }
 input {
   appearance: none;
-  border: 1px black solid;
   outline: 0;
   font: inherit;
   width: 20rem;
@@ -29,8 +28,4 @@ input {
   border-radius: 8px;
   margin: 5px;
   text-align: center;
-}
-
-input:hover {
-  color: red;
 }

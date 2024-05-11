@@ -1,32 +1,31 @@
 .navbar {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 30px;
+  font-family: "Poetsen One", sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px; /* Zwiększyłem wysokość paska nawigacyjnego */
+  height: 50px;
   width: 100%;
-  background-color: #f9f9f9; /* Dodałem tło */
+  border-bottom: #000 solid 2px;
 }
 
-.navbar a {
+a {
   text-decoration: none;
-  color: #350988; /* Zmieniłem kolor tekstu */
-  padding: 15px 20px; /* Zwiększyłem wewnętrzne odstępy */
-  transition: color 0.3s ease; /* Dodane płynne przejście koloru */
+  color: #000;
+  height: 100%;
+  text-align: center;
+  line-height: 50px; 
+  font-size: 20px;
 }
 
-.navbar a:hover {
-  color: #5a0101;
-  transition: color 0.3s ease; /* Dodane płynne przejście koloru */
+h1 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: 500;
 }
 
-.navbar a:first-child {
-  border-left: none; /* Usunąłem lewą krawędź dla pierwszego linku */
-}
-
-.navbar a:last-child {
-  border-right: none; /* Usunąłem prawą krawędź dla ostatniego linku */
+a:hover {
+  color: transparent;
+  text-shadow: 0 0 1px #000;
+  border-color: rgb(52, 52, 52);
+  font-weight: 600;
 }
