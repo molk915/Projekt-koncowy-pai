@@ -5,8 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>AlbionGG</h1>
-      <a href="">Login</a>
-      <a href="">Sign Up</a>
+      <a href="">GoldPrice</a>
     </nav>
   );
 };

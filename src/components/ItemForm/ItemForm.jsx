@@ -70,7 +70,7 @@ function ItemForm({ onSubmit }) {
       </select>
 
       <button type="submit" className="button">
-        GetiItems
+        Get Items
       </button>
     </form>
   );
