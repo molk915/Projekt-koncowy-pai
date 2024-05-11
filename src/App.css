@@ -30,7 +30,3 @@ input {
   margin: 5px;
   text-align: center;
 }
-
-input:hover {
-  color: red;
-}
