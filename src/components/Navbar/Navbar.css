@@ -1,12 +1,14 @@
+@import "/src/variables.css";
+
 .navbar {
-  font-family: "Poetsen One", sans-serif;
+  font-family: var(--main-font-family);
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50px;
   width: 100%;
-  border-bottom: 2px solid rgba(255,255,255,0.3);
-  margin-bottom: 50px
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 50px;
 }
 
 a {
@@ -14,14 +16,13 @@ a {
   color: rgba(255, 255, 255, 0.87);
   height: 100%;
   text-align: center;
-  line-height: 50px; 
+  line-height: 50px;
   font-size: 26px;
 }
 
-
 a:hover {
   color: transparent;
-  text-shadow: 0 0 1px #ffffff;
+  text-shadow: 0 0 1px var(--gradient-end-color);
   border-color: rgb(52, 52, 52);
   font-weight: 600;
 }

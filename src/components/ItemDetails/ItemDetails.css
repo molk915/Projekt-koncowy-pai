@@ -1,17 +1,19 @@
+@import "/src/variables.css";
+
 p {
-    text-align: center;
+  text-align: center;
   background: transparent;
   width: 300px;
   padding: 1em;
   border: none;
-  border-left: 1px solid rgba(255,255,255,0.3);
-  border-top: 1px solid rgba(255,255,255,0.3);
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   border-radius: 50px;
   backdrop-filter: blur(5px);
-  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 60px var(--box-shadow-color);
   color: #fff;
   font-weight: 500;
   font-size: 18px;
   transition: all 0.2s ease-in-out;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 4px var(--box-shadow-color);
 }

@@ -1,28 +1,9 @@
 :root {
-    --main-bg-color: rgba(255,255,255,0.3);
-    --main-border-color: rgba(255,255,255,0.3);
-    --main-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-    --main-text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    --main-padding: 3em;
-    --main-margin-bottom: 30px;
-    --main-transition-duration: 0.2s;
-    --main-transition-ease: ease-in-out;
-    --main-border-radius: 20px;
-    --main-backdrop-filter: blur(10px);
-    --main-button-width: 300px;
-    --main-button-padding: 1em;
-    --main-button-border-radius: 50px;
-    --main-button-box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
-    --main-button-text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    --main-button-font-size: 18px;
-    --main-button-font-weight: 500;
-    --main-button-color: #fff;
-    --main-button-background: transparent;
-    --main-button-border-left: 1px solid var(--main-border-color);
-    --main-button-border-top: 1px solid var(--main-border-color);
-    --main-button-backdrop-filter: blur(5px);
-    --main-button-hover-background: rgba(255,255,255,0.1);
-    --main-button-hover-box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-    --main-button-focus-outline: none;
-  }
-  
+  --main-font-family: 'Poetsen One', sans-serif;
+  --gradient-start-color: #4e54c8;
+  --gradient-end-color: #8f94fb;
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --image-width: 200px;
+  --image-height: 200px;
+}
