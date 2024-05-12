@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from "../LanguageContext";
-import translations from '../Translations';
 import "../LanguageSelector/LanguageSelector.css"
 
 const LanguageSelector = () => {
