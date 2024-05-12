@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import "./GoldPriceButton.css";
 
-<<<<<<< HEAD
 const GoldPriceButton = () => {
-=======
-const GoldenPriceButton = () => {
->>>>>>> ac7011014d611340f2cebb95b7e14332b9951bf1
   const [goldPrice, setGoldPrice] = useState(null);
 
   const fetchGoldPrice = async () => {
@@ -23,19 +19,11 @@ const GoldenPriceButton = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="GoldPrice">
-=======
-    <div>
->>>>>>> ac7011014d611340f2cebb95b7e14332b9951bf1
       <button onClick={fetchGoldPrice}>Get Gold Price</button>
       {goldPrice && <p>Gold Price: {goldPrice}</p>}
     </div>
   );
 };
 
-<<<<<<< HEAD
 export default GoldPriceButton;
-=======
-export default GoldenPriceButton;
->>>>>>> ac7011014d611340f2cebb95b7e14332b9951bf1
