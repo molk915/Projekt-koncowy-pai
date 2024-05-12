@@ -148,3 +148,20 @@ a:hover {
   border-radius: 25px;
   place-items: center;
 }
+@media (max-width: 540px) {
+  h2, a {
+    font-size: 20px;
+  }
+
+  select, button, input {
+    max-width: 200px;
+  }
+
+  form {
+    max-width: 300px;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+}
