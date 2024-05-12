@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./GoldPriceButton.css";
+import { useLanguage } from "../LanguageContext";
+import translations from "../Translations";
 
 const GoldPriceButton = () => {
+  const { language } = useLanguage();
+
   const [goldPrice, setGoldPrice] = useState(null);
 
   const fetchGoldPrice = async () => {
@@ -20,8 +24,8 @@ const GoldPriceButton = () => {
 
   return (
     <div className="GoldPrice">
-      <button onClick={fetchGoldPrice}>Get Gold Price</button>
-      {goldPrice && <p>Gold Price: {goldPrice}</p>}
+      <button onClick={fetchGoldPrice}>{translations[language].getGoldPrice}</button>
+      {goldPrice && <p>{translations[language].goldPrice}: {goldPrice}</p>}
     </div>
   );
 };

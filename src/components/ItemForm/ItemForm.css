@@ -26,7 +26,7 @@ option {
   background: linear-gradient(45deg, var(--gradient-start-color), var(--gradient-end-color));
 }
 
-select {
+  select {
   text-align: center;
   background: transparent;
   width: 300px;
