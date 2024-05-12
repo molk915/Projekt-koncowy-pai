@@ -2,13 +2,6 @@ body{
   font-family: "Poetsen One", sans-serif;
 }
 
-input {
-  border: none;
-  border-bottom: 1px black solid;
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 20px;
-}
 h1 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 25px;
@@ -19,7 +12,6 @@ select {
   border: none;
   appearance: none;
   border-bottom: 1px black solid;
-  border-radius: 10px;
   margin: 5px;
   width: 20rem;
   padding: 10px 20px 10px 10px;
@@ -32,7 +24,6 @@ select {
 
 option {
   color: black;
-  background-color: var(--background-color);
 }
 
 
@@ -40,11 +31,26 @@ button {
   border: none;
   border: 1px #000 solid;
   color: black;
-  border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 18px;
   font-weight: 500;
   font-family: inherit;
   background-color: white;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+input {
+  padding: 0.6em 1.2em;
+  outline: 0;
+  border: none;
+  border-bottom: 1px black solid;
+  font-weight: 400;
+  font-size: 18px;
+  appearance: none;
+  width: 20rem;
+  cursor: pointer;
+  transition: color 300ms;
+  margin: 5px;
+  text-align: center;
 }

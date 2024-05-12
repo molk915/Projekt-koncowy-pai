@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>AlbionGG</h1>
+      <Link to="/">AlbionGG</Link>
       <Link to="/goldenprice">Golden Price</Link>
     </nav>
   );

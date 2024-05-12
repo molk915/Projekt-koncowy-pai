@@ -3,29 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: var(--background-color);
 }
 
 .card {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: var(--text-color);
-}
-input {
-  appearance: none;
-  outline: 0;
-  font: inherit;
-  width: 20rem;
-  padding: 10px 20px 10px 10px;
-  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
-    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
-  color: var(--text-color);
-  border-radius: 0.25em;
-  cursor: pointer;
-  transition: color 300ms;
-  border-radius: 8px;
-  margin: 5px;
-  text-align: center;
-}
