@@ -38,8 +38,10 @@ function App() {
     <div className="App">
       <Navbar />
       <ItemForm onSubmit={getItems} />
-      <ItemDetails itemData={itemData} />
+      <div className="container">
       <ItemImage imageUrl={imageUrl} />
+        <ItemDetails itemData={itemData} />
+      </div>
     </div>
   );
 }

@@ -8,7 +8,6 @@ function ItemImage({ imageUrl }) {
     <img
       src={imageUrl}
       alt="Item"
-      style={{ maxWidth: "200px", maxHeight: "200px" }}
     />
   );
 }

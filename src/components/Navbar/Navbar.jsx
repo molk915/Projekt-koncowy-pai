@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/">AlbionGG</Link>
-      <Link to="/goldenprice">Golden Price</Link>
+      <Link to="/goldprice">Gold Price</Link>
     </nav>
   );
 };

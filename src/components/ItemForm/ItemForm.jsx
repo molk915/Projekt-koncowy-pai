@@ -14,7 +14,8 @@ function ItemForm({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="wrapper">
+      <form onSubmit={handleSubmit}>
       <h2>Item Prices</h2>
       <input
         type="text"
@@ -72,6 +73,7 @@ function ItemForm({ onSubmit }) {
         Get Price
       </button>
     </form>
+    </div>
   );
 }
 

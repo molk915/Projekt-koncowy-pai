@@ -5,7 +5,8 @@ function ItemDetails({ itemData }) {
   if (!itemData) return null;
 
   return (
-    <div>
+    <div className="ItemDetails">
+      <h2>Item Details</h2>
       <p>Max Sell Price: {itemData.sellPriceMax}</p>
       <p>Min Sell Price: {itemData.sellPriceMin}</p>
       <p>Max Buy Price: {itemData.buyPriceMax}</p>

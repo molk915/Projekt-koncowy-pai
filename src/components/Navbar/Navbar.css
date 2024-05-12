@@ -5,22 +5,23 @@
   align-items: center;
   height: 50px;
   width: 100%;
-  border-bottom: #000 solid 2px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  margin-bottom: 50px
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: rgba(255, 255, 255, 0.87);
   height: 100%;
   text-align: center;
   line-height: 50px; 
-  font-size: 22px;
+  font-size: 26px;
 }
 
 
 a:hover {
   color: transparent;
-  text-shadow: 0 0 1px #000;
+  text-shadow: 0 0 1px #ffffff;
   border-color: rgb(52, 52, 52);
   font-weight: 600;
 }

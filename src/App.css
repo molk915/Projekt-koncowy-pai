@@ -1,11 +1,178 @@
-#root {
+body{
+  font-family: "Poetsen One", sans-serif;
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h2 {
+  font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 30px;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+option{
+  color: black;
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+
+}
+select {
+  text-align: center;
+  background: transparent;
+  width: 300px;
+  padding: 1em;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+
+button {
+  text-align: center;
+  background: transparent;
+  width: 300px;
+  padding: 1em;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-size: 18px;
+}
+
+input {
+  text-align: center;
+  background: transparent;
+  width: 300px;
+  padding: 1em;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-size: 18px;
+}
+form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.3);
+  padding: 3em;
+  height: 700px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  display: grid;
+  gap: 30px;
+  place-items: center; 
+  margin-bottom: 30px;
+  
+}
+
+input:hover,
+select:hover,
+textarea:hover,
+button:hover {
+  background: rgba(255,255,255,0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+to itemform.css.navbar {
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  margin-bottom: 50px
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+  height: 100%;
+  text-align: center;
+  line-height: 50px; 
+  font-size: 26px;
+}
+
+
+a:hover {
+  color: transparent;
+  text-shadow: 0 0 1px #ffffff;
+  border-color: rgb(52, 52, 52);
+  font-weight: 600;
+}to navbar.css#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-attachment: fixed;
 }
 
-.card {
-  padding: 2em;
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.3);
+  padding: 3em;
+  height: 500px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  place-items: center; 
+}
